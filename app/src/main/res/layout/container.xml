@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="73dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:background="#E3DFDF">
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="37dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:textAlignment="textStart" />
+
+        <LinearLayout
+            android:layout_width="331dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Book name"
+                android:textAlignment="textStart"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/author"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Author"
+                android:textAlignment="textStart" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="310dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Year"
+                android:textAlignment="textStart" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/delButton"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:textAlignment="textEnd"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel" />
+
+    </LinearLayout>
+
+</LinearLayout>
